@@ -16,7 +16,7 @@ def dfs_recursive(graph, start, visited=None):
     if visited is None:
         visited = set() # 记录已经访问的节点
     visited.add(start)  # 标识当前节点
-    print(start, end= '') #输出当前节点
+    # print(start, end= '') #输出当前节点
     for neighbor in graph[start]:
         if neighbor not in visited:
             dfs_recursive(graph, neighbor, visited)
